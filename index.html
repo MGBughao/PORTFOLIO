@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="animation.css">
+    <script src="animation.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <header>
+            <div class="phone-menu">
+                <i class='bx bx-menu' onclick="menuDropdown()"></i>
+                <div class="menu" id="menu">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+            <div class="icon">
+                <h1>MG<span>B</span></h1>
+            </div>
+            <div class="nav">
+                <a href="index.html" class="active">Home</a>
+                <a href="contact.html">Contact</a>
+                <a href="about.html">About</a>
+            </div>
+        </header>
+        <section>
+            <div class="Home">
+                <div class="content">
+                    <h1>MORELLO G. BUGHAO II</h1>
+                    <h2>Aspiring Website Developer</h2>
+                    <p>Embrace the challenges, fuel your determination, and let perseverance be your guiding light.
+                        Success awaits those who persist with passion.</p>
+                    <a href="#educational">Know More About Me</a>
+                    <div class="links">
+                        <a href="https://www.facebook.com/ollerom.oahgub/"><i class='bx bxl-facebook'></i></a>
+                        <a href="https://www.instagram.com/wzzpmoiii/"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://www.linkedin.com/in/bughao-morello-b429092b7/"><i
+                                class='bx bxl-linkedin'></i></a>
+                    </div>
+                </div>
+                <div class="home-image">
+                    <img src="Profile.jpg">
+                </div>
+            </div>
+
+            <!-- SLIDE-SHOW -->
+            <div id="projects" name="projects" class="projects">
+                <div class="project-title">
+                    <h1>MY PROJECTS</h1>
+                </div>
+                <div class="modal" id="myModal">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <img class="modal-content" id="modalImage">
+                </div>
+                <div class="carousel-container">
+                    <div class="carousel-box">
+                        <div class="slide-holder">
+                            <div class="slide">
+                                <img src="proj1.png" alt="1" onclick="openModal('proj1.png')">
+                                <h2>Static Informational Website (College of Computer Studies)</h2>
+                            </div>
+                            <div class="slide">
+                                <img src="proj2.png" alt="2" onclick="openModal('proj2.png')">
+                                <h2>E-commerce Website Project</h2>
+                            </div>
+                            <div class="slide">
+                                <img src="proj3.png" alt="3" onclick="openModal('proj3.png')">
+                                <h2>My Portfolio Project</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- SLIDE-SHOW -->
+
+            <div id="educational" name="edcuational" class="ed_main">
+                <div class="ed_title">
+                    <h1>EDUCATIONAL BACKGROUND</h1>
+                </div>
+                <div class="ed_content">
+                    <div class="ed1">
+                        <div>
+                            <h1>JUNIOR HIGH SCHOOL</h1>
+                        </div>
+                        <div class="ed_det">
+                            <ul>
+                                <li>School Year 2018-2019 (With High Honor)</li>
+                                <li>Kabankalan National High School</li>
+                                <li>Cordero Street, Brgy. 8, Kabankalan City, Negros Occidental</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="ed2">
+                        <div>
+                            <h1>SENIOR HIGH SCHOOL</h1>
+                        </div>
+                        <div class="ed2_det">
+                            <ul>
+                                <li>School Year 2020-2021 (With High Honor)</li>
+                                <li>Science, Technology, Engineering and Mathematics</li>
+                                <li>Kabankalan Catholic College</li>
+                                <li>Guanzon Street, Barangay 1, Kabankalan City, Negros Occidental</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="ed3">
+                        <div>
+                            <h1>COLLEGE</h1>
+                        </div>
+                        <div class="ed_det">
+                            <ul>
+                                <li>3rd Year</li>
+                                <li>School Year 2023-2024</li>
+                                <li>Bachelor of Science in Information Technology</li>
+                                <li>Central Philippines State University</li>
+                                <li>Barangay Camingawan, Kabankalan City, Negros Occidental</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <a class="back-to-top" href="#"><i class='bx bx-chevrons-up'></i></a>
+        <footer>
+            <div class="footer-links">
+                <div class="quick-links">
+                    <h3>Quick Links:</h3>
+                    <a href="index.html">Home</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="about.html">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#educational">Educational Background</a>
+                </div>
+                <div class="follow">
+                    <p>Follow Me:</p>
+                    <a href="https://www.facebook.com/ollerom.oahgub/"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.instagram.com/wzzpmoiii/"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://www.linkedin.com/in/bughao-morello-b429092b7/"><i class='bx bxl-linkedin'></i></a>
+                </div>
+                <div class="receive-news">
+                    <h3>Receive Latest News:</h3>
+                    <form action="">
+                        <div>
+                            <input type="text" placeholder="Enter Enail">
+                        </div>
+                        <button>Send</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© Copyright 2023-2024</p>
+                <p>All rights reserved. Powered by <span>MeMySelfandI</span></p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
